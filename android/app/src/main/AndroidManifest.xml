@@ -1,22 +1,31 @@
-<application
-    android:name="io.flutter.app.FlutterApplication"
-    android:label="captcha_solver_flutter"
-    android:icon="@mipmap/ic_launcher">
-  <activity
-      android:name=".MainActivity"
-      android:exported="true"
-      android:launchMode="singleTop"
-      android:theme="@style/LaunchTheme"
-      android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|screenLayout|density|uiMode"
-      android:hardwareAccelerated="true"
-      android:windowSoftInputMode="adjustResize">
-    <meta-data
-        android:name="io.flutter.embedding.android.NormalTheme"
-        android:resource="@style/NormalTheme" />
-    <intent-filter>
-      <action android:name="android.intent.action.MAIN"/>
-      <category android:name="android.intent.category.LAUNCHER"/>
-    </intent-filter>
-  </activity>
-  <!-- لا حاجة لأي تعريفات أخرى خاصة بالإصدار القديم هنا -->
-</application>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.captcha_solver_flutter">  <!-- عدّلها حسب الـ package name -->
+
+    <application
+        android:name="io.flutter.app.FlutterApplication"
+        android:label="captcha_solver_flutter"
+        android:icon="@mipmap/ic_launcher">
+        
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            
+            <meta-data
+                android:name="io.flutter.embedding.android.NormalTheme"
+                android:resource="@style/NormalTheme" />
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- احذف هنا أي service/receiver من الـ embedding القديم -->
+        
+    </application>
+</manifest>
