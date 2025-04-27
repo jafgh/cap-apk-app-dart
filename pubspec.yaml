@@ -1,41 +1,46 @@
 name: captcha_solver_flutter
-description: A Flutter application to solve captchas using ONNX Runtime.
-# Prevent accidental publishing to pub.dev.
-publish_to: 'none'
+"
+"description: A Flutter application to solve captchas using ONNX Runtime.
+"
+"publish_to: 'none'
 
-version: 1.0.0+1
+"
+"version: 1.0.0+1
 
-environment:
-  sdk: '>=3.0.0 <4.0.0' # Adjust SDK constraint as needed
+"
+"environment:
+"
+"  sdk: '>=3.0.0 <4.0.0'
 
-dependencies:
-  flutter:
-    sdk: flutter
+"
+"dependencies:
+"
+"  flutter:
+"
+"    sdk: flutter
+"
+"  http: ^1.2.1
+"
+"  onnxruntime: ^1.4.1
+"
+"  image: ^4.1.7
+"
+"  cupertino_icons: ^1.0.6
 
-  # For HTTP requests
-  http: ^1.2.1 # Check for latest version on pub.dev
+"
+"dev_dependencies:
+"
+"  flutter_test:
+"
+"    sdk: flutter
+"
+"  flutter_lints: ^3.0.0
 
-  # For ONNX model inference
-  # Replace with actual package name and version on pub.dev if different
-  onnxruntime: ^1.4.1
-  # For image loading and processing
-  image: ^4.1.7 # Check for latest version on pub.dev
-
-  # Cupertino icons (often included by default)
-  cupertino_icons: ^1.0.6
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-
-  # Linters for code analysis
-  flutter_lints: ^3.0.0
-
-flutter:
-  uses-material-design: true
-
-  # Define assets folder for the ONNX model
-  assets:
-    - assets/ml/holako_bag.onnx
-    # To include all files in the folder, uncomment the line below:
-    # - assets/ml/
+"
+"flutter:
+"
+"  uses-material-design: true
+"
+"  assets:
+"
+"    - assets/ml/holako_bag.onnx
