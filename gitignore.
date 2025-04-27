@@ -1,0 +1,19 @@
+# Flutter/Dart/Pub related
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+ios/Flutter/Flutter.framework
+android/.gradle/
+android/captures/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# Others
+*.lock
