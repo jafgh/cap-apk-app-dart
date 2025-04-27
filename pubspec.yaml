@@ -1,0 +1,43 @@
+name: captcha_solver_flutter
+description: A Flutter application to solve captchas using ONNX Runtime.
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0' # Adjust SDK constraint as needed
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # For HTTP requests
+  http: ^1.2.1 # Check for latest version on pub.dev
+
+  # For ONNX model inference
+  # Find the correct package name and latest version on pub.dev
+  onnxruntime_flutter: ^1.0.0 # Replace with actual package name and version 
+
+  # For image loading, processing (decode GIF, grayscale, resize, etc.)
+  image: ^4.1.7 # Check for latest version
+
+  # Cupertino icons (often included by default)
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Linters for code analysis
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Define assets folder for the ONNX model
+  assets:
+    # Make sure this path matches where you place the model
+    - assets/ml/holako_bag.onnx 
+    # You could also declare the whole folder:
+    # - assets/ml/
