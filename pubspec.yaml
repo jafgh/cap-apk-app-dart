@@ -17,8 +17,7 @@ dependencies:
 
   # For ONNX model inference
   # Replace with actual package name and version on pub.dev if different
-  onnxruntime_flutter: ^1.0.0
-
+  onnxruntime: ^1.4.1
   # For image loading and processing
   image: ^4.1.7 # Check for latest version on pub.dev
 
