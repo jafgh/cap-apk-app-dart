@@ -1,17 +1,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.captcha_solver_flutter">  <!-- عدّلها حسب الـ package name -->
+    package="com.example.captcha_solver_flutter">
 
     <application
-        android:name="io.flutter.app.FlutterApplication"
         android:label="captcha_solver_flutter"
-        android:icon="@mipmap/ic_launcher">
-        
+        android:icon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true">  <!-- إذا تحتاج HTTP غير مشفر -->
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
             android:theme="@style/LaunchTheme"
-            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|screenLayout|density|uiMode"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
             android:windowSoftInputMode="adjustResize">
             
@@ -25,7 +25,6 @@
             </intent-filter>
         </activity>
 
-        <!-- احذف هنا أي service/receiver من الـ embedding القديم -->
-        
+        <!-- احذف أي service/receiver خاصّ بالإصدار القديم -->
     </application>
 </manifest>
